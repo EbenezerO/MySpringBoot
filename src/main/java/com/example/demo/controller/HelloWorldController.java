@@ -46,7 +46,6 @@ public class HelloWorldController {
                 {
                     System.out.println(a.FindAll(input));
                     redisHelper.valuePut(input,a.FindAll(input));
-
                 }
             }catch (IOException e) {
                 System.out.println("data文件中没有找到");
