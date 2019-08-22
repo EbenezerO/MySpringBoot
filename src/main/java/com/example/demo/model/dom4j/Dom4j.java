@@ -1,6 +1,5 @@
-package com.example.demo.model;
+package com.example.demo.model.dom4j;
 
-import org.apache.tomcat.jni.File;
 import org.dom4j.*;
 import org.dom4j.io.SAXReader;
 
@@ -13,7 +12,7 @@ public class Dom4j {
         String res="";
         try {
             SAXReader reader = new SAXReader();
-            Document doc = reader.read("D:\\Idea\\workspace\\demo\\src\\main\\java\\com\\example\\demo\\model\\pm.xml");
+            Document doc = reader.read("D:\\Idea\\workspace\\demo\\src\\main\\java\\com\\example\\demo\\model\\dom4j\\pm.xml");
             // 获取根节点
             Element root = doc.getRootElement();
             // 获取根节点下的子节点measData
