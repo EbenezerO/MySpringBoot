@@ -52,7 +52,6 @@ public class HelloWorldController {
                 System.out.println("data文件中没有找到");
                 e.printStackTrace();
             }
-
         }
         return "redis中不存在,从data文件中拿取并存入redis，以便下次访问";
     }
